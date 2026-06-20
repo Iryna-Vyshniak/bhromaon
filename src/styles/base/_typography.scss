@@ -1,0 +1,38 @@
+body {
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: var(--font-body);
+    line-height: 1.75;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+.section-title {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: var(--fs-section-title);
+    line-height: 1.11111;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--color-text-primary);
+}
+
+.card-title {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: var(--fs-card-title);
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+}
+
+.subtitle {
+    font-family: var(--font-body);
+    font-size: var(--fs-card-title);
+    line-height: 1.4;
+    color: var(--color-text-primary);
+}

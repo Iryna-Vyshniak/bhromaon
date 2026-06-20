@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-block-start: var(--header-nav-height);
+}
+
+
+body {
+    min-block-size: 100svh;
+    background-color: var(--color-bg-surface);
+}
+
+img,
+picture,
+svg {
+    display: block;
+    max-inline-size: 100%;
+}
+
+img {
+    block-size: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+:where(ul, ol) {
+    list-style: none;
+}
+
+:where(button) {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}

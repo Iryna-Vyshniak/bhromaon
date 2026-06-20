@@ -1,0 +1,27 @@
+.btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+    min-inline-size: 9.9375rem;
+    min-block-size: 2rem;
+
+    background-color: var(--color-primary);
+
+    font-weight: 400;
+
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+
+    &:active {
+        transform: translateY(2px);
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            background-color: var(--color-primary-darker);
+        }
+    }
+}
