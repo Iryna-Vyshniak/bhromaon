@@ -1,0 +1,41 @@
+:root {
+--color-primary: #5373fd;
+--color-primary-darker: #486bfe;
+--color-accent-pink: #ff6363;
+--color-accent-blue: #00a2ff;
+--color-accent-black: #000000;
+--color-text-primary: #ffffff;
+--color-text-secondary: #999999;
+
+--color-focus: #ff6363;
+--color-bg-dark: #000000;
+--color-bg-surface: #333333;
+
+--font-heading: "Aleo", serif;
+--font-body: "Josefin Sans", sans-serif;
+
+--fs-body: 1rem;
+--fs-sm: 0.875rem;
+--fs-md: 1.5rem;
+
+--fs-hero-title: 3rem;
+--fs-hero-subtitle: 1.375rem;
+
+--fs-section-title: 2.25rem;
+--fs-card-title: 1.25rem;
+
+--container-max-inline-size: 85rem;
+--header-nav-height: 5.25rem;
+
+--sp-xl: 6.875rem;
+--sp-lg: 2rem;
+--sp-md: 1.5rem;
+--sp-xs: 1.125rem;
+
+--transition: 440ms;
+--ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+--transition: var(--transition) var(--ease-out-expo);
+
+--z-nav: 100;
+--z-overlay: 200;
+}
