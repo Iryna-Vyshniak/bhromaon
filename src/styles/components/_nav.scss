@@ -1,0 +1,97 @@
+.header__nav-box {
+    position: sticky;
+    inset-block-start: -1px;
+    inset-inline-start: 0;
+    z-index: var(--z-nav);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    inline-size: 100%;
+    block-size: var(--nav-height);
+    background-color: var(--color-primary);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding-block: 1.875rem;
+    padding-inline: var(--sp-xs);
+    inline-size: 100%;
+
+    @media (min-width: 48rem) {
+        flex-direction: column;
+        gap: var(--sp-lg);
+        padding-inline: 6rem;
+    }
+
+    @media (min-width: 64rem) {
+        flex-direction: row;
+        padding-inline: 2rem;
+    }
+
+    &__logo {
+        font-family: var(--font-body);
+        font-weight: 700;
+        font-size: var(--fs-md);
+        line-height: 1.16667;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--color-text-primary);
+    }
+
+    &__burger {
+        display: block;
+        inline-size: 2.5rem;
+        block-size: 1.5rem;
+        aspect-ratio: 1 / 1;
+        color: var(--color-primary-light);
+        transition: color var(--transition);
+
+        &:hover .nav__burger-icon {
+            color: var(--color-accent-blue);
+        }
+
+        @media (min-width: 48rem) {
+            display: none;
+        }
+    }
+
+    &__menu {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: var(--sp-md);
+        inline-size: 100%;
+
+        @media (min-width: 48rem) {
+            display: flex;
+        }
+
+        @media (min-width: 64rem) {
+            justify-content: flex-end;
+        }
+
+        &-item {
+            transition: color var(--transition);
+
+            &:hover .nav__menu-link {
+                color: var(--color-accent-blue);
+            }
+        }
+
+        &-link {
+            font-family: var(--font-body);
+            font-weight: 400;
+            font-size: var(--fs-sm);
+            line-height: 1.42857;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-primary-light);
+            transition: color var(--transition);
+        }
+    }
+}

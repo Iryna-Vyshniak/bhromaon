@@ -1,0 +1,90 @@
+.nav__close {
+    position: absolute;
+    inset-block-start: 1.6875rem;
+    inset-inline-end: 1.5rem;
+    display: block;
+    inline-size: 1.875rem;
+    block-size: 1.875rem;
+    aspect-ratio: 1 / 1;
+    color: var(--color-primary-light);
+    transition: color var(--transition);
+
+    &:hover .nav__close-icon {
+        color: var(--color-accent-blue);
+    }
+}
+
+.mobile-nav {
+    position: relative;
+    inline-size: 100%;
+    max-inline-size: 100%;
+    min-block-size: 18.75rem;
+    background-color: var(--color-primary);
+    
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity var(--transition), transform var(--transition);
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.478);
+
+    &[open] {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    @media (min-width: 48rem) {
+        display: none !important;
+    }
+
+    nav {
+        inline-size: 100%;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 4rem;
+        padding-inline: 2rem;
+        padding-block: 1.875rem;
+        inline-size: 100%;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--sp-md);
+        inline-size: 100%;
+    }
+
+    &__menu {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--sp-md);
+
+        &-item {
+            transition: color var(--transition);
+
+            &:hover .mobile-nav__menu-link {
+                color: var(--color-accent-blue);
+            }
+        }
+
+        &-link {
+            font-family: var(--font-body);
+            font-weight: 400;
+            font-size: var(--fs-sm);
+            line-height: 1.42857;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-primary-light);
+            transition: color var(--transition);
+        }
+    }
+}
