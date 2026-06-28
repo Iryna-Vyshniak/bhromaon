@@ -1,5 +1,7 @@
 import 'virtual:svg-icons-register';
 
+import initNavigation from './modules/navigation';
+
 document.addEventListener('DOMContentLoaded', () =>{
-    console.log('hello, world')
+   initNavigation()
 });
