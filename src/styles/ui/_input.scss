@@ -1,0 +1,17 @@
+ input {
+     flex: 1;
+     text-align: left;
+     inline-size: 100%;
+     block-size: 3.75rem;
+     padding-inline: .45rem;
+     padding-block: 1.25rem;
+
+     border: none;
+     background: transparent;
+ }
+
+ @media (min-width: 576px) {
+     input {
+         padding-inline: 2.25rem;
+     }
+ }
