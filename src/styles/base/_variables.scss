@@ -1,6 +1,7 @@
 :root {
 --color-primary: #5373fd;
 --color-primary-darker: #486bfe;
+--color-primary-light: #ffffff;
 --color-accent-pink: #ff6363;
 --color-accent-blue: #00a2ff;
 --color-accent-black: #000000;
@@ -15,7 +16,7 @@
 --font-body: "Josefin Sans", sans-serif;
 
 --fs-body: 1rem;
---fs-sm: 0.875rem;
+--fs-sm: .875rem;
 --fs-md: 1.5rem;
 
 --fs-hero-title: 3rem;
@@ -24,13 +25,19 @@
 --fs-section-title: 2.25rem;
 --fs-card-title: 1.25rem;
 
---container-max-inline-size: 85rem;
---header-nav-height: 5.25rem;
+--container-max-width: 85rem;
+--nav-height: 5.25rem;
 
+--sp-2xl: 7.5rem;
 --sp-xl: 6.875rem;
 --sp-lg: 2rem;
 --sp-md: 1.5rem;
 --sp-xs: 1.125rem;
+
+--media-sm: 576px;
+--media-md: 768px;
+--media-lg: 1024px;
+--media-xl: 1360px;
 
 --transition: 440ms;
 --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -38,4 +45,16 @@
 
 --z-nav: 100;
 --z-overlay: 200;
+}
+
+@media (min-width: 48rem) {
+    :root {
+        --nav-height: 8.5rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    :root {
+        --nav-height: 5.25rem;
+    }
 }

@@ -3,3 +3,25 @@
     margin-inline: auto;
     inline-size: 100%;
 }
+
+.section {
+    padding-inline: var(--sp-xs);
+}
+
+@media (min-width: 48rem) {
+    .section {
+        padding-inline: var(--sp-md);
+    }
+}
+
+@media (min-width: 64rem) {
+    .section {
+        padding-inline: var(--sp-lg);
+    }
+}
+
+@media (min-width: 85rem) {
+    .section {
+        padding-inline: var(--sp-xl);
+    }
+}

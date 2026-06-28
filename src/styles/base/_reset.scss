@@ -9,13 +9,21 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
-    scroll-padding-block-start: var(--header-nav-height);
 }
 
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto !important;
+    }
+}
 
 body {
     min-block-size: 100svh;
     background-color: var(--color-bg-surface);
+}
+
+.main > section {
+    scroll-margin-top: calc(var(--nav-height) + 1rem);
 }
 
 img,
@@ -44,4 +52,10 @@ a {
     cursor: pointer;
     border: none;
     background: none;
+}
+
+dialog {
+    margin: 0;
+    padding: 0;
+    border: none;
 }
